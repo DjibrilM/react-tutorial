@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.task:hover .delete-btn {
+    opacity: 1;
+}
+
+.tasks-container::-webkit-scrollbar {
+    background-color: transparent;
+    width: 7px;
+}
+
+.tasks-container::-webkit-scrollbar-thumb {
+    background-color: rgba(120, 120, 213, 0.858);
+    border-radius: 100px;
+}
