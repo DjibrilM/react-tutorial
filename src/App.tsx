@@ -1,3 +1,4 @@
+import React from "react";
 import Task from "./components/Task";
 import { AiOutlinePlus } from 'react-icons/ai';
 import { ChangeEvent, FormEvent, useRef } from "react";
@@ -55,7 +56,7 @@ function App() {
 
         <section className='max-w-[700px] relative  h-[500px]  m-auto p-4 border bg-white'>
           <ul className="h-[calc(100%-50px)] w-full list-none overflow-auto tasks-container pb-5">
-            {tasks.length > 0 && tasks.map((tsk) => <Task markAsCompletd={markAsCompleted} delete={deleteTask} task={tsk.task} completed={tsk.completed} id={tsk.id} />)}
+            {tasks.length > 0 && tasks.map((tsk) => <Task markAsCompletd={markAsCompleted} delete={deleteTask} task={tsk.task} completed={tsk.completed} id={tsk.id} key={tsk.id} />)}
             {tasks.length < 1 && (<h1 className="text-center mt-10">No Task Yet !</h1>)}
           </ul>
 

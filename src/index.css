@@ -4,26 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
-
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .task:hover .delete-btn {
-    opacity: 1;
+  opacity: 1;
 }
 
 .tasks-container::-webkit-scrollbar {
-    background-color: transparent;
-    width: 7px;
+  background-color: transparent;
+  width: 7px;
 }
 
 .tasks-container::-webkit-scrollbar-thumb {
-    background-color: rgba(120, 120, 213, 0.858);
-    border-radius: 100px;
+  background-color: rgba(120, 120, 213, 0.858);
+  border-radius: 100px;
 }
